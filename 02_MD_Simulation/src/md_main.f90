@@ -13,12 +13,12 @@ program md_main
     real(dp), allocatable :: v_history(:,:)
     character(len=256) :: velocity_dat
 
-    velocity_dat = "data_25/Velocity_dist.dat"
-    open(1000, file="data_25/Initial.dat", status="replace")
-    open(1001, file="data_25/Final.dat", status="replace")
-    open(1002, file="data_25/Energy.dat", status="replace")
+    velocity_dat = "data/Velocity_dist.dat"
+    open(1000, file="data/Initial.dat", status="replace")
+    open(1001, file="data/Final.dat", status="replace")
+    open(1002, file="data/Energy.dat", status="replace")
 
-    Nmol = 25
+    Nmol = 200
     Nstep = 100000
     Nx = ceiling(sqrt(real(Nmol, dp)))
     Ny = ceiling(real(Nmol, dp)/real(Nx, dp))

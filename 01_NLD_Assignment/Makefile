@@ -7,6 +7,7 @@ SRC_SHARED = src/shared
 SRC_PROB = src/problems
 OBJ_DIR = obj
 BIN_DIR = bin
+DATA_DIR = data
 
 # 1. FIND ALL PROBLEM FILES AUTOMATICALLY
 # This looks in src/problems for any file matching "prob*.f90"
@@ -17,7 +18,7 @@ SRCS = $(wildcard $(SRC_PROB)/prob*.f90)
 PROGS = $(patsubst $(SRC_PROB)/%.f90, $(BIN_DIR)/%, $(SRCS))
 
 # Helper to create directories
-$(shell mkdir -p $(OBJ_DIR) $(BIN_DIR))
+$(shell mkdir -p $(OBJ_DIR) $(BIN_DIR) $(DATA_DIR))
 
 # Shared objects
 OBJS_SHARED = $(OBJ_DIR)/constants_mod.o $(OBJ_DIR)/RK5_solver.o
