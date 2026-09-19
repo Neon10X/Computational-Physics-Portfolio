@@ -137,4 +137,4 @@ Each subdirectory follows the same internal structure: src/, plots/, Makefile, a
 ## 📄 License & Credits
 All work is original. Programs were written and tested on Linux (Ubuntu 24.04).
 This portfolio was created for academic purposes as part of the M.Sc. Physics curriculum at Jadavpur University.
-Repository last updated: April 2026
+Repository last updated: September 2026
